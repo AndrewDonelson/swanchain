@@ -1,0 +1,12 @@
+syntax = "proto3";
+package swanchain.swanchain;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "swanchain/x/swanchain/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

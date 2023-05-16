@@ -1,0 +1,7 @@
+syntax = "proto3";
+package swanchain.swanchain;
+
+option go_package = "swanchain/x/swanchain/types";
+
+// Msg defines the Msg service.
+service Msg {}

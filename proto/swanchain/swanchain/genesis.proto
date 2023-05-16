@@ -1,0 +1,12 @@
+syntax = "proto3";
+package swanchain.swanchain;
+
+import "gogoproto/gogo.proto";
+import "swanchain/swanchain/params.proto";
+
+option go_package = "swanchain/x/swanchain/types";
+
+// GenesisState defines the swanchain module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
